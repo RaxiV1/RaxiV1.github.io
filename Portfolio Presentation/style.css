@@ -1,0 +1,67 @@
+*{
+    margin:0;
+}
+body{
+    background-color: #D3FBD8;
+}
+.center{
+    flex-flow: wrap row;
+    display: flex;
+    justify-content:center;
+    margin: 100px;
+    
+}
+.item{
+    background-color: #FF7AAC;
+    padding:100px;
+    margin: 15px;
+    box-shadow: 10px 10px 10px 0px #2a0f0f;
+    border-radius: 10px;
+    transition: .3s;
+    display: inline-block;
+    color:#410c37
+    
+}
+p,.slide-fwd-right{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2em;
+    font-weight: bold;
+}
+.container{
+        display: flex;
+         justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;      
+        }     
+.container:hover > :not(:hover){
+    transition: 0.5s;
+    opacity: .4;
+}
+/*---------------------------------------*/
+.wrapper {
+    height: 50vh;
+    display: grid;
+    place-items: center;
+}
+
+.typing-demo {
+    width: 20ch;
+    animation: typing 2s steps(24), blink .5s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 4em;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
